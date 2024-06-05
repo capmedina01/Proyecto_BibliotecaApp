@@ -10,4 +10,30 @@ package Models;
  */
 public class LibroCategoria {
     
+    private int libroID;
+    private int categoriaID;
+
+    public LibroCategoria(int libroID, int categoriaID) {
+        this.libroID = libroID;
+        this.categoriaID = categoriaID;
+    }
+
+    public int getCategoriaID() {
+        return categoriaID;
+    }
+
+    public void setCategoriaID(int categoriaID) {
+        this.categoriaID = categoriaID;
+    }
+
+    public int getLibroID() {
+        return libroID;
+    }
+
+    public void setLibroID(int libroID) {
+        this.libroID = libroID;
+    }
+    
+    
+    
 }

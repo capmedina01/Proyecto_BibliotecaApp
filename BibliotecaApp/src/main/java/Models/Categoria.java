@@ -10,8 +10,8 @@ package Models;
  */
 public class Categoria {
     
-    int categoriaID;
-    String nombre;
+    private int categoriaID;
+    private String nombre;
 
     public Categoria(int categoriaID, String nombre) {
         this.categoriaID = categoriaID;
