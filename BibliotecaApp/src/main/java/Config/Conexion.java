@@ -18,7 +18,7 @@ public class Conexion
     Connection connection = null;
     String usuario = "sa";
     String clave = "master123";
-    String bd = "Tienda";
+    String bd = "BibliotecaApp";
     String ip = "localhost";
     String puerto = "1433";
             
@@ -47,7 +47,5 @@ public class Conexion
                 System.out.println("Error al cerrar la conexión" + e.getMessage());
             }
         }
-
-    }
-    
+    }    
 }
