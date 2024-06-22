@@ -29,7 +29,7 @@ public class EmpleadoDao {
     
     }
     public void crearEmpleado(Empleado empleado){
-        String sql = "INSERT INTO empleado (nombre, direccion, telefono, email, clave, rolID)";
+        String sql = "INSERT INTO empleado (nombre, direccion, telefono, email, clave, rolID) VALUES (?, ?, ?, ?, ?, ?)" ;
         try(PreparedStatement statement = connection.prepareStatement(sql)){
             statement.setString(1, empleado.getNombre());
             statement.setString(2, empleado.getDireccion());
