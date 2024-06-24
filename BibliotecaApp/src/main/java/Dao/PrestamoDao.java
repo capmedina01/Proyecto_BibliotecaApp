@@ -87,8 +87,10 @@ public class PrestamoDao {
                 int id = resultSet.getInt("prestamoID");
                 int libroID = resultSet.getInt("libroID");
                 int usuarioID = resultSet.getInt("libroID");
-                
-                
+                LocalDate fechaPrestamo = resultSet.getDate("fechaPrestamo").toLocalDate();
+                LocalDate fechaDevolucion = resultSet.getDate("fechaDevolucion").toLocalDate();
+                Prestamo prestamo = new Prestamo(id, libroID, usuarioID, fechaPrestamo, fechaDevolucion);
+                listPrestamo.add(prestamo);
             }
             
         }
@@ -98,7 +100,5 @@ public class PrestamoDao {
         
         return listPrestamo;
     }
-    
-    
     
 }
