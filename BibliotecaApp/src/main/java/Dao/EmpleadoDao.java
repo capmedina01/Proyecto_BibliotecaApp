@@ -97,6 +97,27 @@ public class EmpleadoDao {
         return listEmpleado;
     }
     
+    public boolean validarUsuario(Empleado empleado){
+        String sql = "SELECT COUNT(*) FROM empleado WHERE email = ? AND clave = ?";
+        
+        try(PreparedStatement statement = connection.prepareStatement(sql)){
+            statement.setString(1, empleado.getEmail());
+            statement.setString(2, empleado.getClave());
+            try(ResultSet result = statement.executeQuery()){
+                if(result.next()){
+                    int cont = result.getInt(1);
+                    return cont>0;
+                }
+                
+            }
+            
+        }
+        catch(SQLException e){
+            System.out.println("Error registro no encontrado" + e.getMessage());
+        }
+        return false;
+    }
+    
     public void cerrarConexion(){
         conexion.closeConnection(connection);  
     

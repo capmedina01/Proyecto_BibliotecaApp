@@ -4,6 +4,8 @@
 
 package BibliotecaApp;
 
+import Views.Login;
+
 /**
  *
  * @author kalic
@@ -11,6 +13,7 @@ package BibliotecaApp;
 public class BibliotecaApp {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        Login login = new Login();
+        login.setVisible(true);
     }
 }

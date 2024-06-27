@@ -27,6 +27,11 @@ public class Empleado {
         this.clave = clave;
         this.rolID = rolID;
     }
+    
+    public Empleado(String email, String clave){
+        this.email = email;
+        this.clave = clave;
+    }
 
     
 
