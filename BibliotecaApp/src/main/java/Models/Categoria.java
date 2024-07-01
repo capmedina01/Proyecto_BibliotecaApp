@@ -18,6 +18,16 @@ public class Categoria {
         this.nombre = nombre;
     }
 
+    public Categoria(String nombre) {
+        this.nombre = nombre;
+        
+    }
+    
+    @Override
+    public String toString() {
+        return nombre;
+    }
+
     public int getCategoriaID() {
         return categoriaID;
     }

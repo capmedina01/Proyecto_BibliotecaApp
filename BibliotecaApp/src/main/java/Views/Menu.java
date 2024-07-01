@@ -29,11 +29,10 @@ public class Menu extends javax.swing.JFrame {
         BgMenu = new javax.swing.JPanel();
         butMenu = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        userButton = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        adminCL = new javax.swing.JButton();
+        adminL = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         imgMenu = new javax.swing.JPanel();
@@ -48,35 +47,55 @@ public class Menu extends javax.swing.JFrame {
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("Menu");
 
-        jButton4.setBackground(new java.awt.Color(0, 102, 102));
-        jButton4.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setText("Registrar Usuario");
-
-        jButton5.setBackground(new java.awt.Color(0, 102, 102));
-        jButton5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setText("Registrar Usuario");
+        userButton.setBackground(new java.awt.Color(0, 102, 102));
+        userButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        userButton.setForeground(new java.awt.Color(255, 255, 255));
+        userButton.setText("Administrar Empleado");
+        userButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                userButtonActionPerformed(evt);
+            }
+        });
 
         jButton6.setBackground(new java.awt.Color(0, 102, 102));
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButton6.setForeground(new java.awt.Color(255, 255, 255));
-        jButton6.setText("Registrar Usuario");
+        jButton6.setText("Administrar Usuario");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
-        jButton7.setBackground(new java.awt.Color(0, 102, 102));
-        jButton7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton7.setForeground(new java.awt.Color(255, 255, 255));
-        jButton7.setText("Registrar Usuario");
+        adminCL.setBackground(new java.awt.Color(0, 102, 102));
+        adminCL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        adminCL.setForeground(new java.awt.Color(255, 255, 255));
+        adminCL.setText("Administrar Categoria L");
+        adminCL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminCLActionPerformed(evt);
+            }
+        });
 
-        jButton8.setBackground(new java.awt.Color(0, 102, 102));
-        jButton8.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jButton8.setForeground(new java.awt.Color(255, 255, 255));
-        jButton8.setText("Registrar Usuario");
+        adminL.setBackground(new java.awt.Color(0, 102, 102));
+        adminL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        adminL.setForeground(new java.awt.Color(255, 255, 255));
+        adminL.setText("Administrar Libro");
+        adminL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                adminLActionPerformed(evt);
+            }
+        });
 
         jButton9.setBackground(new java.awt.Color(0, 102, 102));
         jButton9.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButton9.setForeground(new java.awt.Color(255, 255, 255));
-        jButton9.setText("Registrar Usuario");
+        jButton9.setText("Administrar Categoria");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setBackground(new java.awt.Color(0, 102, 102));
         jButton10.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -98,11 +117,10 @@ public class Menu extends javax.swing.JFrame {
                 .addContainerGap(62, Short.MAX_VALUE)
                 .addGroup(butMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(adminL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(adminCL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(userButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(42, 42, 42))
         );
@@ -111,20 +129,18 @@ public class Menu extends javax.swing.JFrame {
             .addGroup(butMenuLayout.createSequentialGroup()
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton4)
+                .addComponent(userButton)
                 .addGap(18, 18, 18)
                 .addComponent(jButton10)
                 .addGap(18, 18, 18)
                 .addComponent(jButton9)
                 .addGap(18, 18, 18)
-                .addComponent(jButton8)
+                .addComponent(adminL)
                 .addGap(18, 18, 18)
-                .addComponent(jButton7)
+                .addComponent(adminCL)
                 .addGap(18, 18, 18)
                 .addComponent(jButton6)
-                .addGap(18, 18, 18)
-                .addComponent(jButton5)
-                .addContainerGap())
+                .addGap(63, 63, 63))
         );
 
         imgMenu.setMaximumSize(new java.awt.Dimension(400, 400));
@@ -180,6 +196,31 @@ public class Menu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton10ActionPerformed
 
+    private void userButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userButtonActionPerformed
+        new AdminEmpleado().setVisible(true);
+                    dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_userButtonActionPerformed
+
+    private void adminLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminLActionPerformed
+        new AdminLibro().setVisible(true);
+                    dispose(); 
+    }//GEN-LAST:event_adminLActionPerformed
+
+    private void adminCLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminCLActionPerformed
+        new AdminCatLibro().setVisible(true);
+                    dispose(); 
+    }//GEN-LAST:event_adminCLActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        new AdminCategoria().setVisible(true);
+                    dispose(); 
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        new AdminEmpleado().setVisible(true);
+                    dispose(); 
+    }//GEN-LAST:event_jButton6ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -217,16 +258,15 @@ public class Menu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BgMenu;
+    private javax.swing.JButton adminCL;
+    private javax.swing.JButton adminL;
     private javax.swing.JPanel butMenu;
     private javax.swing.JPanel imgMenu;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton userButton;
     // End of variables declaration//GEN-END:variables
 }

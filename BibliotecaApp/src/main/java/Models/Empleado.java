@@ -33,6 +33,17 @@ public class Empleado {
         this.clave = clave;
     }
 
+    public Empleado(String nombre, String direccion, String telefono, String email,String clave, int rolID) {
+        this.nombre = nombre;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.email = email;
+        this.clave = clave;
+        this.rolID = rolID;
+    }
+    
+    
+
     
 
     public String getEmail() {

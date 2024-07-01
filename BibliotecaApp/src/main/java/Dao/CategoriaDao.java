@@ -77,6 +77,7 @@ public class CategoriaDao {
                         Categoria categoria = new Categoria(id, nombre);
                         listCategoria.add(categoria);                        
                     }
+                    return listCategoria;
             
         }
         catch(SQLException e){

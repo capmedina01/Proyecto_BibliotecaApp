@@ -7,6 +7,7 @@ package Views;
 import Controllers.EmpleadoController;
 import com.formdev.flatlaf.intellijthemes.FlatGradiantoNatureGreenIJTheme;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -143,6 +144,7 @@ public class Login extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void IniSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniSesionActionPerformed
         // TODO add your handling code here:
          String username = ValUsuario.getText();

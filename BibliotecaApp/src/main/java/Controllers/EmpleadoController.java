@@ -6,6 +6,7 @@ package Controllers;
 
 import Dao.EmpleadoDao;
 import Models.Empleado;
+import java.util.List;
 
 /**
  *
@@ -24,6 +25,16 @@ public class EmpleadoController {
         
         return empleadoDao.validarUsuario(empLogin);
         
+    }
+    
+    public List<Empleado> obtenerEmpleados(){
+        
+        return empleadoDao.mostrarEmpleado();
+    } 
+    
+    public void crearEmpleado(String nombre, String direccion,String telefono, String email, String clave, int rol){
+        Empleado empleado = new  Empleado(nombre,direccion,telefono,email,clave,rol);
+        empleadoDao.crearEmpleado(empleado);
     }
     
 }
